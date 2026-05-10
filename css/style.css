@@ -10093,3 +10093,54 @@ html {
   position: relative;
   box-shadow: 0 0 10px rgba(11, 206, 175, 0.5);
 }
+
+/* ==========================================================================
+   Responsive Typography & Aesthetics Overrides
+   ========================================================================== */
+
+/* Modern Text Drop Shadows */
+.modern-name-shadow {
+  text-shadow: 2px 4px 8px rgba(0, 0, 0, 0.4);
+  letter-spacing: 1px;
+}
+.modern-typed-shadow {
+  text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Fix massive typography and overlaps on mobile */
+@media (max-width: 768px) {
+  .display-1 {
+    font-size: 3.5rem !important;
+    -webkit-text-stroke: 0.5px #dee2e6 !important;
+    line-height: 1.1;
+  }
+  .display-2 {
+    font-size: 3rem !important;
+  }
+  .display-3 {
+    font-size: 2.2rem !important;
+    letter-spacing: 0 !important;
+  }
+  .display-4 {
+    font-size: 2rem !important;
+  }
+  .typed-text-output {
+    font-size: 1.25rem !important;
+  }
+  /* Fix position-absolute section foreground titles */
+  .position-relative h1.position-absolute {
+    font-size: 1.5rem !important;
+    width: 100%;
+    text-align: center;
+  }
+  
+  /* Reduce excessive padding */
+  .py-5 {
+    padding-top: 2rem !important;
+    padding-bottom: 2rem !important;
+  }
+  .mb-5, .my-5 {
+    margin-bottom: 2rem !important;
+  }
+}
+
